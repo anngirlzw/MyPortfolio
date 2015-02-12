@@ -1,6 +1,6 @@
 /******************************************************************
 Site Name:
-Author:
+Author: Wen Zhang
 
 Stylesheet: Variables
 
@@ -16,6 +16,9 @@ COLORS
 Need help w/ choosing your colors? Try this site out:
 http://0to255.com/
 *********************/
+
+$montserrat:		'Montserrat', sans-serif;
+$sourceCodePro:		'Source Code Pro';
 
 $alert-yellow:      #ebe16f;
 $alert-red:         #fbe3e4;
@@ -42,6 +45,9 @@ $link-hover:        darken($link-color, 9%);
 
 $border-color:      #ccc;
 $disabled-gray:     #cfcfcf;
+
+// CUSTOM
+$theme-blue:		#a1becf;
 
 
 /*
