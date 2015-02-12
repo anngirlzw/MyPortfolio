@@ -1,0 +1,32 @@
+p {
+	font-family: $sourceCodePro;
+
+
+}
+
+body {
+	overflow-x: hidden;
+}
+
+#wz_home {
+	// background-color: $theme-blue;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	// z-index: 10;
+	background: url('../images/home_background.png') $theme-blue bottom center fixed no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	// background-position: 50%;
+	// margin: 0 auto;
+
+	.content {
+		position: relative;
+		width: 700px;
+		margin: 0 auto;
+		height: 100%;
+	}
+
+}
