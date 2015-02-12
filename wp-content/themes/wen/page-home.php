@@ -10,11 +10,19 @@
 
 	<div id="inner-content" class="cf">
 
-		<div id="main" class="m-all cf" role="main">
+		<div id="main" class="m-all cf" role="main" >
 
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
+				<div class="home-container" style="position: absolute; width: 100%; height: 100%">
+
 				<section id="wz_home" class="cf">
+
+					<div class="content">
+						<h1>Ariel Fan</h1>
+						<p>Front end developer</p>
+
+					</div>
 
 					<?php
 
@@ -23,6 +31,8 @@
 					?>
 
 				</section>
+
+				</div>
 
 		<?php endwhile; endif; 
 

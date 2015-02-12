@@ -85,7 +85,6 @@ var smSize = Modernizr.mq('(max-width: 767px)');
 function toggleMenu() {
   var body = document.body,
   mask = document.getElementById('menu-mask'),
-  maskStatus = mask.style.display, 
   toggleSlideLeft = document.querySelector( ".toggle-slide-left" ),
   activeNav
   // mask = document.createElement("div"),
@@ -96,7 +95,7 @@ function toggleMenu() {
   toggleSlideLeft.addEventListener( "click", function(){
 
     jQuery(body).addClass('sml-open');
-    maskStatus = "block";
+    mask.style.display = "block";
     jQuery(mask).addClass('fade');
     activeNav = "sml-open";
 
@@ -113,7 +112,7 @@ function toggleMenu() {
     el.addEventListener( "click", function(){
     body.classList.remove("sml-open");                
     activeNav = "";
-    maskStatus = "none";
+    mask.style.display = "none";
 
     // classie.remove( body, activeNav ); 
     // document.body.removeChild(mask);
@@ -124,9 +123,6 @@ function toggleMenu() {
 } //end of toggleMenu
 
 
-/*
- * Put all your regular jQuery in here.
-*/
 jQuery(document).ready(function($) {
 
 // toggle menu
