@@ -1038,7 +1038,13 @@ body {
   overflow-x: hidden;
 }
 
-/* line 11, ../scss/partials/_main.scss */
+/* line 12, ../scss/partials/_main.scss */
+#content {
+  background: white;
+  margin-bottom: 200px;
+}
+
+/* line 17, ../scss/partials/_main.scss */
 #wz_home {
   position: relative;
   width: 100%;
@@ -1048,13 +1054,63 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
 }
-/* line 25, ../scss/partials/_main.scss */
-#wz_home .content {
-  position: relative;
-  width: 700px;
+/* line 36, ../scss/partials/_main.scss */
+#wz_home .home_content {
   margin: 0 auto;
-  height: 100%;
+  width: 50%;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* line 45, ../scss/partials/_main.scss */
+#wz_home, #wz_work, #wz_contact {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+
+/* line 51, ../scss/partials/_main.scss */
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #3c3c3c;
+  z-index: -1;
+  height: 200px;
+}
+
+/* line 60, ../scss/partials/_main.scss */
+.social-links {
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+/* line 66, ../scss/partials/_main.scss */
+.social-links a {
+  text-decoration: none;
+  line-height: 46px;
+  padding: 10px;
+  transition: all 0.2s ease-in;
+  color: #a4a4a4;
+}
+/* line 75, ../scss/partials/_main.scss */
+.social-links:hover {
+  color: #a1becf;
+}
+
+/* line 80, ../scss/partials/_main.scss */
+.copyright {
+  text-align: center;
+  font-size: 13px;
 }
 
 /* line 1, ../scss/partials/_menu.scss */
@@ -1931,11 +1987,6 @@ and more scalable.
 /*********************
 POSTS & CONTENT STYLES
 *********************/
-/* line 254, ../scss/breakpoints/_base.scss */
-#content {
-  margin-top: 1.5em;
-}
-
 /* line 258, ../scss/breakpoints/_base.scss */
 .hentry {
   background-color: #fff;

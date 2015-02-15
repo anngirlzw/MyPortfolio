@@ -2,6 +2,22 @@
 
 				<div id="inner-footer" class="wrap cf">
 
+
+
+
+
+					<!-- social media links -->
+					<div class="social-links">
+					<a href="">Facebook</a>
+					
+					<a href="http://instagram.com/arielwenzhang">Instagram
+					</a>
+					<a href="">LinkedIn
+					</a>
+					<a href="">Contact</a>
+
+					</div>
+
 					<nav role="navigation">
 						<?php wp_nav_menu(array(
     					'container' => '',                              // remove nav container
@@ -18,7 +34,7 @@
 						)); ?>
 					</nav>
 
-					<p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>.</p>
+					<p class="source-org copyright">&copy; <?php echo date('Y'); ?> Design and Developed by <?php bloginfo( 'name' ); ?>. All wrongs reversed.</p>
 
 				</div>
 

@@ -6,6 +6,12 @@ p {
 
 body {
 	overflow-x: hidden;
+	
+}
+
+#content {
+	background: white;
+	margin-bottom: 200px;
 }
 
 #wz_home {
@@ -22,11 +28,56 @@ body {
 	// background-position: 50%;
 	// margin: 0 auto;
 
-	.content {
-		position: relative;
-		width: 700px;
+	// AVOID BLURRY CHILD ELEMENTS
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+
+	.home_content {
 		margin: 0 auto;
-		height: 100%;
+		width: 50%;
+		text-align: center;
+		@include vertical-align;
 	}
 
+}
+
+#wz_home, #wz_work, #wz_contact {
+	position:relative;
+	width: 100%;
+	z-index: 1;
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background: #3c3c3c;
+	z-index: -1;
+	height: 200px;
+}
+
+.social-links {
+
+	width: 80%;
+text-align: center;
+margin: 0 auto;
+padding-top: 30px;
+	a {
+		text-decoration: none;
+		line-height: 46px;
+padding: 10px;
+transition: all 0.2s ease-in;
+	color: #a4a4a4;
+
+	}
+
+	&:hover {
+		color: $theme-blue;
+	}
+}
+
+.copyright {
+	text-align: center;
+	font-size: 13px;
 }

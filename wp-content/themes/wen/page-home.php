@@ -18,7 +18,7 @@
 
 				<section id="wz_home" class="cf">
 
-					<div class="content">
+					<div class="home_content">
 						<h1>Ariel Fan</h1>
 						<p>Front end developer</p>
 

@@ -1,12 +1,7 @@
 /*
  * Bones Scripts File
  * Author: Wen Zhang
- *
- * Instead of calling it in the header or throwing it inside wp_head()
- * this file will be called automatically in the footer so as not to
- * slow the page load.
 */
-
 
 /*
  * Get Viewport Dimensions
@@ -37,10 +32,6 @@ var waitForFinalEvent = (function () {
 
 // how long to wait before deciding the resize has stopped, in ms. Around 50-100 should work ok.
 var timeToWaitForLast = 100;
-
-// Check media query size
-var smSize = Modernizr.mq('(max-width: 767px)');
-
 
 /*
  * Here's an example so you can see how we're using the above function
@@ -81,17 +72,27 @@ var smSize = Modernizr.mq('(max-width: 767px)');
  * Keep it light and always make sure the larger viewports are doing the heavy lifting.
  *
 */
+ // Check if an element contains a specific classname
+function hasClass(element, cls) {
+    return (' ' + element.className + ' ').indexOf(' ' + cls + ' ') > -1;
+}
+
+var body = document.body,
+mask = document.getElementById('menu-mask'),
+toggleSlideLeft = document.querySelector( ".toggle-slide-left" ),
+activeNav
+// mask = document.createElement("div"),
+;
+
+function closeMenu() {
+      body.classList.remove("sml-open");                
+    activeNav = "";
+    mask.style.display = "none";
+}
 
 function toggleMenu() {
-  var body = document.body,
-  mask = document.getElementById('menu-mask'),
-  toggleSlideLeft = document.querySelector( ".toggle-slide-left" ),
-  activeNav
-  // mask = document.createElement("div"),
-  ;
 
   // mask.className = "mask fade";
-
   toggleSlideLeft.addEventListener( "click", function(){
 
     jQuery(body).addClass('sml-open');
@@ -110,9 +111,7 @@ function toggleMenu() {
     // Close Menu
   [].slice.call(menu_items).forEach(function(el,i){
     el.addEventListener( "click", function(){
-    body.classList.remove("sml-open");                
-    activeNav = "";
-    mask.style.display = "none";
+      closeMenu();
 
     // classie.remove( body, activeNav ); 
     // document.body.removeChild(mask);
@@ -126,18 +125,23 @@ function toggleMenu() {
 jQuery(document).ready(function($) {
 
 // toggle menu
-if(smSize) {
+if(Modernizr.mq('(max-width: 767px)')) {
   console.log('mobile menu');
   toggleMenu();
 }
 
 window.addEventListener('resize', function(){
-  if(smSize) {
+  if(Modernizr.mq('(max-width: 767px)')) {
     console.log('resize to mobile menu');
     toggleMenu();
   } else {
     console.log('resize to normal menu');
-    // Dont run toggle Menu
+    // remove mask if menu was open before resizing
+    if (hasClass(document.body, "sml-open")) {
+    // if (document.body.classList.contains('sml-open')) {
+      console.log('mask is still open');
+      closeMenu();
+    }
   }
 });
 
