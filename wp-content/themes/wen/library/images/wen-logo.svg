@@ -1,19 +1,8 @@
-			<footer class="footer" role="contentinfo">
-
-				<div id="inner-footer" class="wrap cf">
-
-
-					<!-- LOGO -->
-
-
-
-					<div class="logo-container">
-						<img src="img/wen-logo.svg" class="footer-logo svg">
-<!-- 						<div class="footer-logo">
-
-						</div> -->
-<!-- <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100"
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="252.102px" height="252.102px" viewBox="0 0 100 100"
 	 xml:space="preserve">
 <path fill="#231815" d="M250.911,117.952c-0.708-11.526-2.679-22.942-6.393-33.898c-0.24-0.709-0.489-1.441-0.739-2.173
 	c-0.014-0.029-0.032-0.052-0.045-0.081c-0.35-0.808-0.68-1.613-0.967-2.444c-0.043-0.125-0.069-0.209-0.085-0.271
@@ -50,49 +39,4 @@
 <path fill="none" stroke="#231815" stroke-width="4" stroke-miterlimit="10" d="M126.051,2C57.54,2,2,57.54,2,126.051
 	c0,68.512,55.54,124.051,124.051,124.051c12.719,0,24.989-1.918,36.542-5.474c1.718-0.717,3.478-1.322,5.299-1.768
 	c47.923-17.169,82.21-62.98,82.21-116.81C250.102,57.54,194.562,2,126.051,2z"/>
-</svg> -->
-					</div>
-
-
-					<!-- social media links -->
-					<div class="social-links">
-					<a href="">Facebook</a>
-					
-					<a href="http://instagram.com/arielwenzhang">Instagram
-					</a>
-					<a href="">LinkedIn
-					</a>
-					<a href="">Contact</a>
-
-					</div>
-<!-- 
-					<nav role="navigation">
-						<?php wp_nav_menu(array(
-    					'container' => '',                              // remove nav container
-    					'container_class' => 'footer-links cf',         // class of container (should you choose to use it)
-    					'menu' => __( 'Footer Links', 'bonestheme' ),   // nav name
-    					'menu_class' => 'nav footer-nav cf',            // adding custom nav class
-    					'theme_location' => 'footer-links',             // where it's located in the theme
-    					'before' => '',                                 // before the menu
-        			'after' => '',                                  // after the menu
-        			'link_before' => '',                            // before each link
-        			'link_after' => '',                             // after each link
-        			'depth' => 0,                                   // limit the depth of the nav
-    					'fallback_cb' => 'bones_footer_links_fallback'  // fallback function
-						)); ?>
-					</nav> -->
-
-					<p class="source-org copyright">&copy; <?php echo date('Y'); ?> Design and Developed by <?php bloginfo( 'name' ); ?>. All wrongs reversed.</p>
-
-				</div>
-
-			</footer>
-
-		</div>
-
-		<?php // all js scripts are loaded in library/bones.php ?>
-		<?php wp_footer(); ?>
-
-	</body>
-
-</html> <!-- end of site. what a ride! -->
+</svg>

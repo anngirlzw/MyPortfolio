@@ -14,6 +14,8 @@ body {
 	margin-bottom: 200px;
 }
 
+
+
 #wz_home {
 	// background-color: $theme-blue;
 	position: relative;
@@ -62,7 +64,7 @@ footer {
 	width: 80%;
 text-align: center;
 margin: 0 auto;
-padding-top: 30px;
+//padding-top: 30px;
 	a {
 		text-decoration: none;
 		line-height: 46px;
@@ -80,4 +82,17 @@ transition: all 0.2s ease-in;
 .copyright {
 	text-align: center;
 	font-size: 13px;
+}
+
+.logo-container {
+	text-align: center;
+}
+
+.footer-logo {
+	width:70px;
+
+}
+
+.svg path {
+	//fill: red;
 }

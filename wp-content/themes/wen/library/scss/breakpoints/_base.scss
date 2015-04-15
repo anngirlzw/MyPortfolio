@@ -81,6 +81,7 @@ LINK STYLES
 a, a:visited {
 	// color: $link-color;
 	outline-color: transparent !important;
+	text-decoration: none;
 
 	/* on hover */
 	&:hover, &:focus {
@@ -153,14 +154,14 @@ HEADER STYLES
 *********************/
 
 .header {
-	background-color: $black;
+	//background-color: $black;
 }
 
 	#logo {
 		margin: 0.75em 0;
 
 		a {
-			color: $white;
+			//color: $white;
 		}
 	}
 
